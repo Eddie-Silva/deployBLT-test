@@ -1,0 +1,21 @@
+﻿@model FeaturesViewModel
+@{
+    ViewData["Title"] = "Features";
+}
+
+<body>
+    <div class="main-body content just-left">
+        <h2>Features</h2>
+        <h4 class="green">(PROJECT NAME)</h4>
+        <div class="features-list link-font">
+            @foreach (var f in Model.Features)
+            {
+                <h4>@f.Name</h4>
+                <button class="features-button download-feature">Download</button>
+
+                @Html.ActionLink("View", "scenarios", "features", f)
+            }
+        </div>
+    </div>
+</body>
+

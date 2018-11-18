@@ -1,0 +1,14 @@
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/bin/Debug/netcoreapp2.1/BLT.Service.deps.json
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/bin/Debug/netcoreapp2.1/BLT.Service.dll
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/bin/Debug/netcoreapp2.1/BLT.Service.pdb
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/bin/Debug/netcoreapp2.1/BLT.Data.dll
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/bin/Debug/netcoreapp2.1/BLT.Domain.dll
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/bin/Debug/netcoreapp2.1/BLT.Data.pdb
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/bin/Debug/netcoreapp2.1/BLT.Domain.pdb
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/obj/Debug/netcoreapp2.1/BLT.Service.csprojAssemblyReference.cache
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/obj/Debug/netcoreapp2.1/BLT.Service.csproj.CoreCompileInputs.cache
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/obj/Debug/netcoreapp2.1/BLT.Service.AssemblyInfoInputs.cache
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/obj/Debug/netcoreapp2.1/BLT.Service.AssemblyInfo.cs
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/obj/Debug/netcoreapp2.1/BLT.Service.csproj.CopyComplete
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/obj/Debug/netcoreapp2.1/BLT.Service.dll
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Service/obj/Debug/netcoreapp2.1/BLT.Service.pdb

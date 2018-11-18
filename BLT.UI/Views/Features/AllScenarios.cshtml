@@ -1,0 +1,38 @@
+﻿@model ScenariosViewModel
+@{
+    ViewData["Title"] = "AllScenarios";
+}
+
+
+
+<body>
+    <div class="main-body content cent">
+        <h2>All Scenarios: @Model.Feature.Name</h2>
+        <div class="scenarios-list">
+            @foreach (var s in Model.Scenarios)
+            {
+            <div class="steps-list">
+                <h3>@s.Header</h3>
+                @if (s.HasBackground == true)
+                {
+                    <h4>@s.Background</h4>
+                }
+                @foreach (var t in s.StepList)
+                {
+                    <p>@t.Content</p>
+                }
+                @if (s.IsOutline == true)
+                {
+                    <p>Examples:</p>
+                    @foreach (var e in s.Examples)
+                    {
+                        <p>| @e |</p>
+                    }
+                }
+            </div>
+            }
+        </div>
+    </div>
+</body>
+
+

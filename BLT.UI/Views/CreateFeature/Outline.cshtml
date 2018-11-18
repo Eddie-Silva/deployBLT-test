@@ -1,0 +1,110 @@
+
+@{
+    ViewData["Title"] = "Outline";
+}
+
+<body>
+
+        <div class="cent content">
+            <h2>Create Feature</h2>
+            <h3 class ="green">(PROJECT NAME)</h3>
+            <h4>(FEATURE NAME)</h4>
+            <hr>
+        </div>
+        
+
+             <div class="scenario-outline cent" id="create-scenario-outline-option">
+                    <h4>Create Scenario Outline</h4>
+            </div>    
+
+
+        <!---------steps to create a scenario outline---------------------->
+            <div class="scenario-outline steps-questions cent" id="s-outline">
+
+                    <div class="dropdown" id="so-dropdown">
+                        <button class="dropbtn" onclick="toogle_div('continue-btn');"><p>(Select Outline Step)</p><br>I want to:</button>
+                        <div class="dropdown-content">
+                            <button type="button" onclick="toggle_div('so-user-is-on-page'); toggle_captions_visibility('so-caption-area');" class="dropdown-content">Go to Page</button><br>
+                            <button type="button" onclick="toggle_div('so-user-login'); toggle_captions_visibility('so-caption-area');" class="dropdown-content">Log In</button><br>
+                            <button type="button" onclick="toggle_div('so-user-inputs'); toggle_captions_visibility('so-caption-area');" class="dropdown-content">Fill Out Form</button><br>
+                            <button type="button" onclick="toggle_div('so-check-element-contains'); toggle_captions_visibility('so-caption-area');" class="dropdown-content">Check Page for Content</button><br>
+                            <button type="button" onclick="toggle_div('so-user-clicks'); toggle_captions_visibility('so-caption-area');" class="dropdown-content">Click Link/Button</button><br>
+                            <button type="button" onclick="toggle_div('so-user-chooses-radio'); toggle_captions_visibility('so-caption-area');" class="dropdown-content">Choose Radio Button</button><br>
+                        </div> 
+                    </div>    
+            </div>
+
+        <!-------------continue to example steps------------------->
+
+                <div class="blank-area" id="so-caption-area">                 
+                    <div class="cent" id="so-step-captions">   
+                        <div class="hidden-div" id="so-user-is-on-page">
+                         <form class="Feature-Form">
+                            <h5 >User is on (web) page.</h5>
+                            <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(web address)">
+                            <button type="button" onclick="toggle_div('so-user-is-on-page')">Add Step</button>
+                            </form>
+                        </div>
+
+                        <div class="hidden-div" id="so-user-login">
+                            <form class="Feature-Form">
+                                <h5 >User logs in with (Username) and (Password).</h5>
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(Username)">
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(Password)">
+                                <button type="button" onclick="toggle_div('so-user-login') ">Add Step</button>
+                            </form>
+                        </div>
+
+                        <div class="hidden-div" id="so-user-inputs">
+                            <form class="Feature-Form">
+                                <h5 >User inputs (Content) in (Field).</h5>
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(Conent)">
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(Field)">
+                                <button type="button" onclick="toggle_div('so-user-inputs') ">Add Step</button>
+                            </form>
+                        </div> 
+
+                        <div class="hidden-div" id="so-check-element-contains">
+                            <form class="Feature-Form">
+                                <h5 >Check that (Element) contains (Value).</h5>
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(Elment)">
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(Value)">
+                                <button type="button" onclick="toggle_div('so-check-element-contains'); ">Add Step</button>
+                            </form>
+                        </div>
+
+                        <div class="hidden-div" id="so-user-clicks">
+                            <form class="Feature-Form">
+                                    <h5 >User clicks (link or button).</h5>
+                                    <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(link or button)">
+                                    <button type="button" onclick="toggle_div('so-user-clicks');">Add Step</button>
+                            </form> 
+                        </div>
+
+                        <div class="hidden-div" id="so-user-chooses-radio">
+                            <form class="Feature-Form">
+                                <h5 >User chooses (radio button).</h5>
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(radio button)">
+                                <button type="button" onclick="toggle_div('so-user-chooses-radio');">Add Step</button>
+                            </form>
+                        </div>
+
+                    </div> 
+
+                    
+                    
+                </div> 
+
+                <br>
+                <br>
+
+                <div class="cent">
+                        <a href="/CreateFeature/Scenario" class="features-button">Continue</a>    
+                </div>
+                <br>
+
+                <div class="cent" id="finish-link"><a href="/CreateFeature/FinishedFile" class="finish-button">FINISH FEATURE</a>
+                        
+                </div>
+
+</body>

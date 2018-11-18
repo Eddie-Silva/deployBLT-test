@@ -1,0 +1,29 @@
+﻿@model ProjectsViewModel
+@{
+    ViewData["Title"] = "Projects";
+}
+
+
+<body>
+    <div class="main-body content just-left">
+        <h2>Projects</h2>
+        <div class="projects-list link-font">
+            @foreach (var p in Model.Projects)
+            {
+
+                <h4>@p.Name</h4>
+                <button class="projects-button download-project">Download Project</button>
+                @Html.ActionLink("View", "features", "features", p)
+
+            }
+        </div>
+        <br>
+        <br>
+        <a href="/CreateFeature/Index" class="features-button" id="create-feature-button">Create Feature</a>
+    </div>
+    <div class="cent page">
+         <a href="#" class="link-font" id="next-page">Next Page...</a>
+    </div>
+</body>
+
+

@@ -1,0 +1,29 @@
+@model Project
+@{
+    ViewData["Title"] = "NewProject";
+}
+
+
+
+<body>
+    <div class="main-body content cent">
+        <div class="content cent">
+            <div class="main-body">
+                <h2>Create New Project?</h2>
+
+                @using (Html.BeginForm("NewProject", "CreateFeature", FormMethod.Post, new { p = Model }))
+                {
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "(Type Project Name)", maxlength = "50", size = "20"})
+                    <input type="submit" class ="features-button" value="Create Project" />
+                }
+
+                <h4>OR</h4>
+                <div>
+                    <a href="/Features/Index" class="features-button" id="add-feature-to-project-button">Add Feature to a Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+ 

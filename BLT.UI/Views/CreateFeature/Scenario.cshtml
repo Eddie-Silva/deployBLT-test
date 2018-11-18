@@ -1,0 +1,111 @@
+
+@{
+    ViewData["Title"] = "Scenario";
+}
+
+<body>
+        <div class="cent content">
+            <h2>Create Feature</h2>
+            <h3 class ="green">(PROJECT NAME)</h3>
+            <h4>(FEATURE NAME)</h4>
+            <hr>
+        </div>
+        
+
+        
+            <div class="cent" id="add-bg-option">
+                <button type="button" onclick="toggle_div('create-scenario'); hide_block('add-bg-option');" class="features-button cent">Create Scenario</button> OR <a href="/CreateFeature/Outline" class="features-button" id="create-feature-button">Scenario Outline</a>
+            </div>
+
+            <!---------------------------------------------------->
+
+            <div class="scenario cent hidden-div" id="create-scenario">
+                    <div class="dropdown" id="scenario-dropdown">
+                        <button class="dropbtn"><p>(Select Scenario Step)</p><br>I want to:</button>
+                        <div class="dropdown-content">
+                            <button type="button" onclick="toggle_div('user-is-on-page'); toggle_captions_visibility('caption-area');" class="dropdown-content">Go to Page</button><br>
+                            <button type="button" onclick="toggle_div('user-login'); toggle_captions_visibility('caption-area');" class="dropdown-content">Log In</button><br>
+                            <button type="button" onclick="toggle_div('user-inputs'); toggle_captions_visibility('caption-area');" class="dropdown-content">Fill Out Form</button><br>
+                            <button type="button" onclick="toggle_div('check-element-contains'); toggle_captions_visibility('caption-area');" class="dropdown-content">Check Page for Content</button><br>
+                            <button type="button" onclick="toggle_div('user-clicks'); toggle_captions_visibility('caption-area');" class="dropdown-content">Click Link/Button</button><br>
+                            <button type="button" onclick="toggle_div('user-chooses-radio'); toggle_captions_visibility('caption-area');" class="dropdown-content">Choose Radio Button</button><br>
+                        </div> 
+                    </div> 
+
+            </div>
+
+            <!-----------------scenario step options----------------->     
+
+                <div class="blank-area" id="caption-area">                 
+                    <div class="cent" id="step-captions">   
+                        <div class="hidden-div" id="user-is-on-page">
+                         <form class="Feature-Form">
+                            <h5 >User is on (web) page.</h5>
+                            <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(web address)">
+                            <button type="button" onclick="toggle_div('user-is-on-page')">Add Step</button>
+                            </form>
+                        </div>
+
+                        <div class="hidden-div" id="user-login">
+                            <form class="Feature-Form">
+                                <h5 >User logs in with (Username) and (Password).</h5>
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(Username)">
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(Password)">
+                                <button type="button" onclick="toggle_div('user-login') ">Add Step</button>
+                            </form>
+                        </div>
+
+                        <div class="hidden-div" id="user-inputs">
+                            <form class="Feature-Form">
+                                <h5 >User inputs (Content) in (Field).</h5>
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(Conent)">
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(Field)">
+                                <button type="button" onclick="toggle_div('user-inputs') ">Add Step</button>
+                            </form>
+                        </div> 
+
+                        <div class="hidden-div" id="check-element-contains">
+                            <form class="Feature-Form">
+                                <h5 >Check that (Element) contains (Value).</h5>
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(Elment)">
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(Value)">
+                                <button type="button" onclick="toggle_div('check-element-contains'); ">Add Step</button>
+                            </form>
+                        </div>
+
+                        <div class="hidden-div" id="user-clicks">
+                            <form class="Feature-Form">
+                                    <h5 >User clicks (link or button).</h5>
+                                    <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(link or button)">
+                                    <button type="button" onclick="toggle_div('user-clicks');">Add Step</button>
+                            </form> 
+                        </div>
+
+                        <div class="hidden-div" id="user-chooses-radio">
+                            <form class="Feature-Form">
+                                <h5 >User chooses (radio button).</h5>
+                                <input type="text" name="Feature_Details" maxlength="50" size="20" placeholder="(radio button)">
+                                <button type="button" onclick="toggle_div('user-chooses-radio');">Add Step</button>
+                            </form>
+                        </div>
+
+                    </div>
+
+                     <div class="cent" id="continue-to-feature-button">
+                        <a href="/CreateFeature/Scenario" class="features-button">Continue</a>    
+                    </div>
+                </div>
+            
+                <br>
+                <br>
+                <br>
+
+            
+                
+                <div class="cent" id="finish-link">
+                        <a href="/CreateFeature/FinishedFile" class="finish-button">FINISH FEATURE</a>
+                        
+                </div>
+
+        </div>
+</body>

@@ -1,0 +1,9 @@
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Domain/bin/Debug/netcoreapp2.1/BLT.Domain.deps.json
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Domain/bin/Debug/netcoreapp2.1/BLT.Domain.dll
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Domain/bin/Debug/netcoreapp2.1/BLT.Domain.pdb
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Domain/obj/Debug/netcoreapp2.1/BLT.Domain.csprojAssemblyReference.cache
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Domain/obj/Debug/netcoreapp2.1/BLT.Domain.csproj.CoreCompileInputs.cache
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Domain/obj/Debug/netcoreapp2.1/BLT.Domain.AssemblyInfoInputs.cache
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Domain/obj/Debug/netcoreapp2.1/BLT.Domain.AssemblyInfo.cs
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Domain/obj/Debug/netcoreapp2.1/BLT.Domain.dll
+/Users/tbatch27/Desktop/BLTlocal/BLT/BLT.Domain/obj/Debug/netcoreapp2.1/BLT.Domain.pdb

@@ -1,0 +1,42 @@
+﻿@model StepsViewModel
+@{
+    ViewData["Title"] = "Steps";
+}
+
+
+
+<body>
+    <div class="main-body content just-left">
+        <h2>Steps</h2>
+        <h4 class="green">Projects</h4>
+        <div class="steps-list" id="text-val">
+            <h5>@Model.Scenario.Header</h5>
+            <br>
+            @if(Model.Scenario.HasBackground == true)
+            {
+                <h5>@Model.Scenario.Background</h5>
+            }
+            <br>
+            @foreach(var s in Model.Scenario.StepList)
+            {
+                <p class="green">@s.Content</p>
+            }
+            <br>
+            @if(Model.Scenario.IsOutline == true)
+            {
+                <p>Examples:</p>
+                @foreach(var e in Model.Scenario.Examples)
+                {
+                    <p>| @e |</p>
+                }
+            }
+            <br>
+        </div>
+        <br>
+        <br>
+        <input type="button" class ="features-button" id="dwn-btn" value="Download button"/>
+            <br>
+
+        <a href="/Home/CreateFeature" class="features-button" id="create-feature-button">Create Feature</a>
+    </div>
+</body>

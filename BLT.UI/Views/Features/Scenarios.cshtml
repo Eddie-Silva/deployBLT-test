@@ -1,0 +1,24 @@
+﻿@model ScenariosViewModel
+@{
+    ViewData["Title"] = "Scenarios";
+}
+
+
+
+<body>
+    <div class="main-body content just-left">
+        <h2>Scenarios</h2>
+        <div class="scenarios-list">
+            @foreach(var s in Model.Scenarios)
+            {
+                <h5>@Html.ActionLink(s.Header, "steps", "features", s) </h5>
+            }
+        </div>
+        <br>
+        <br>
+        <div class="link-font">
+        @Html.ActionLink("View All", "allScenarios", "features", Model.Feature)
+        </div>
+    </div>
+</body>
+

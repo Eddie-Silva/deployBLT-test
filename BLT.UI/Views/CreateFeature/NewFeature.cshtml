@@ -1,0 +1,23 @@
+﻿@model CreateFeatureViewModel
+@{
+    ViewData["Title"] = "NameFeature";
+}
+
+
+<div class="name-the-feature cent">
+    <h2>Create Feature</h2>
+    <div id="feature-name">
+        <h3 class ="green">@Model.Project.Name</h3>
+        <h4>Name the Feature</h4>
+        
+        <form asp-controller="CreateFeature" asp-action="NameFeature" class="Feature-Form">
+            <label asp-for="Feature.Name"></label>
+
+            <input type="text" name="Feature.Name" maxlength="50" size="20">
+            @Html.ActionLink("Create Steps", "Background", "CreateFeature")
+
+        </form>
+    </div>
+</div>
+
+
